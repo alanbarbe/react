@@ -1,0 +1,24 @@
+.hola-mundo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: #282c34; /* Fondo oscuro */
+  margin: 0; /* Eliminar márgenes */
+}
+
+.hola-mundo-texto {
+  color: #0404e2; /* Color de texto azul claro */
+  font-size: 48px; /* Tamaño de letra más grande */
+  font-family: 'Arial', sans-serif; /* Fuente legible y moderna */
+  text-align: center; /* Centrar el texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transiciones para efectos */
+}
+
+.hola-mundo-texto:hover {
+  transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  color: #ffffff; /* Cambiar color de texto al pasar el ratón */
+
+}
