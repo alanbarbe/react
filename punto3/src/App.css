@@ -1,0 +1,59 @@
+/* Estilos generales para el contenedor */
+.contador-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #282c34; 
+  color: #0404e2; 
+  font-family: 'Arial', sans-serif;
+  margin: 0; 
+}
+
+/* Estilo del display del contador */
+.contador-display {
+  font-size: 64px; /* Tamaño de fuente grande para el contador */
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, color 0.2s ease; /* Transiciones para animación */
+}
+
+/* Estilos para los botones */
+.contador-botones {
+  display: flex;
+  gap: 20px; /* Espaciado entre los botones */
+}
+
+.boton {
+  background-color: #61dafb; /* Fondo del botón */
+  border: none;
+  border-radius: 5px;
+  color: #282c34; /* Color de texto del botón */
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para efectos */
+}
+
+/* Efecto hover para los botones */
+.boton:hover {
+  background-color: #21a1f1; /* Cambio de color al pasar el ratón */
+  transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+}
+
+/* Animación del contador al cambiar el valor */
+.contador-display {
+  animation: bump 0.2s ease;
+}
+
+@keyframes bump {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2); /* Aumentar el tamaño temporalmente */
+  }
+  100% {
+      transform: scale(1);
+  }
+}
