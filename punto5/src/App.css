@@ -1,0 +1,84 @@
+/* Estilo del contenedor del formulario */
+.formulario-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Centra el formulario verticalmente */
+  background-color: #717171; /* Fondo gris */
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Estilo del formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; /* Transición para hover */
+}
+
+/* Estilo para el input de nombre */
+.input-nombre {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease; /* Transición para foco */
+}
+
+/* Estilo para el botón de submit */
+.boton-submit {
+  padding: 10px 20px;
+  background-color: #0404e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones */
+}
+
+/* Efecto hover para el botón */
+.boton-submit:hover {
+  background-color: #00008e;
+  transform: scale(1.05); /* Agrandar ligeramente el botón */
+}
+
+/* Estilo para el mensaje de bienvenida */
+.mensaje-bienvenida {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #004cff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Inicialmente invisible */
+  animation: fadeIn 0.5s forwards; /* Animación de desvanecimiento */
+}
+
+/* Animación para el mensaje de bienvenida */
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+/* Efecto de foco para el input */
+.input-nombre:focus {
+  box-shadow: 0 0 8px rgba(97, 218, 251, 0.5); /* Sombra suave en foco */
+  outline: none; /* Eliminar borde de foco predeterminado */
+}
+
+/* Efecto hover para el formulario */
+.formulario:hover {
+  transform: scale(1.02); /* Agrandar ligeramente todo el formulario */
+}
