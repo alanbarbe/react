@@ -1,0 +1,99 @@
+body {
+  background-color: #717171; /* Color de fondo de toda la página */
+}
+/* Estilos generales para el contenedor */
+.lista-tareas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Título */
+.lista-tareas-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de input y botón */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  background-color: #0404e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #00008e;
+}
+
+/* Lista de tareas */
+.lista-tareas {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+/* Elementos de tarea */
+.tarea-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Tareas completadas */
+.tarea-item.completada {
+  text-decoration: line-through;
+  color: #777;
+  background-color: #5e5e5e;
+}
+
+/* Animación de hover en las tareas */
+.tarea-item:hover {
+  transform: scale(1.02);
+}
+
+/* Botón de eliminar */
+.boton-eliminar {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-eliminar:hover {
+  background-color: #ff4b4b;
+}
