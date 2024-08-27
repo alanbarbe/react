@@ -1,0 +1,46 @@
+/* Estilos para centrar la tarjeta y mejorar la apariencia */
+.tarjeta-presentacion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: #f0f0f0; /* Fondo suave */
+  margin: 0; /* Eliminar márgenes */
+}
+
+.tarjeta-presentacion {
+  background-color: #ffffff; /* Fondo de la tarjeta */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+  padding: 20px; /* Espaciado interno */
+  width: 300px; /* Ancho fijo */
+  text-align: center; /* Centrar texto */
+  transition: transform 0.3s ease; /* Transición para efectos */
+}
+
+.imagen-perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover; /* Ajustar la imagen dentro del contenedor */
+}
+
+/* Estilo de texto */
+.tarjeta-presentacion h2 {
+  font-size: 24px; /* Tamaño de fuente para el nombre */
+  margin: 10px 0; /* Espaciado */
+  color: #0404e2; /* Color de texto oscuro */
+}
+
+.tarjeta-presentacion p {
+  font-size: 18px; /* Tamaño de fuente para la profesión */
+  color: #777; /* Color de texto gris */
+  margin: 5px 0; /* Espaciado */
+}
+
+/* Agregar un efecto hover para interactividad */
+.tarjeta-presentacion:hover {
+  transform: translateY(-10px); /* Mover la tarjeta hacia arriba al pasar el ratón */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar sombra en hover */
+}
