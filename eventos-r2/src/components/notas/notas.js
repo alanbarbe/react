@@ -1,10 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './notas.css';
 
 const Notas = () => {
   const [nota, setNota] = useState('');
   const [historial, setHistorial] = useState([]);
   const [timer, setTimer] = useState(null);
+  const notaRef = useRef(nota); // Referencia para mantener el valor más reciente
+
+  useEffect(() => {
+    notaRef.current = nota; // Actualizar la referencia en cada render
+  }, [nota]);
 
   const handleChange = (event) => {
     setNota(event.target.value);
@@ -16,10 +21,12 @@ const Notas = () => {
 
     // Establecer un nuevo temporizador
     setTimer(setTimeout(() => {
+      // Utilizar la referencia para obtener el valor más reciente de la nota
+      const nuevaNota = notaRef.current;
       // Guardar la nota en el historial, manteniendo solo las últimas 2
-      setHistorial(prevHistorial => [nota, ...prevHistorial].slice(0, 2));
+      setHistorial(prevHistorial => [nuevaNota, ...prevHistorial].slice(0, 2));
       // Aquí puedes agregar lógica para guardar la nota en un backend o localStorage
-      console.log('Nota guardada:', nota);
+      console.log('Nota guardada:', nuevaNota);
     }, 2000)); // Guarda después de 2 segundos de inactividad
   };
 
