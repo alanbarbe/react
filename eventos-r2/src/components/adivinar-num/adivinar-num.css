@@ -1,0 +1,65 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container-adivinanza {
+    height: 100vh; /* Asegura que el contenedor ocupe todo el alto de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffefd5; /* Fondo de color distinto (papayawhip) */
+  }
+  
+  .juego-adivinanza {
+    background-color: #f0f8ff; /* Fondo azul claro */
+    border: 2px solid #4682b4;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .juego-adivinanza h1 {
+    color: #4682b4;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .juego-adivinanza label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .juego-adivinanza input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #4682b4;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .juego-adivinanza button {
+    background-color: #4682b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .juego-adivinanza button:hover {
+    background-color: #4169e1;
+  }
+  
+  .mensaje {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  

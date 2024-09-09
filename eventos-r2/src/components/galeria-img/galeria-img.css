@@ -1,0 +1,101 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.galeria-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e0e7ff, #c7d2fe);
+    padding: 2rem;
+  }
+  
+  .galeria-img__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #0404e2;
+    letter-spacing: 0.05em;
+  }
+  
+  .galeria-img__container {
+    position: relative;
+    width: 100%;
+    max-width: 48rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .galeria-img__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .galeria-img__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  }
+  
+  .galeria-img__counter {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #0404e2;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+  
+  .galeria-img__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 9999px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .galeria-img__button:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .galeria-img__button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(67, 56, 202, 0.5);
+  }
+  
+  .galeria-img__button--left {
+    left: 1rem;
+  }
+  
+  .galeria-img__button--right {
+    right: 1rem;
+  }
+  
+  .galeria-img__icon {
+    width: 2rem;
+    height: 2rem;
+    color: #0404e2;
+  }
+  
+  .galeria-img__instructions {
+    margin-top: 2rem;
+    color: #0404e2;
+    font-weight: 500;
+  }
